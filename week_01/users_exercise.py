@@ -92,3 +92,27 @@ users["Erik"]["pets"].append(
 )
 print(users["Erik"]["pets"])
 # 10. Add another person to the users dictionary
+users.update(
+     {
+  "Paul": {
+    "twitter": "AngryPaul279",
+    "lottery_numbers": [3, 7, 15, 23, 32, 37],
+    "home_town": "Stirling",
+    "pets": [
+    {
+      "name": "pippin",
+      "species": "cat"
+    },
+    {
+      "name": "merry",
+      "species": "cat"
+    }
+      ]
+        }
+          }
+)
+
+print(users)
+
+     
+
