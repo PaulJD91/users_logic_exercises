@@ -11,8 +11,10 @@ for number in numbers:
 print(even_ints)
 
 # 2. Print the difference between the largest and smallest value:
+sorted_numbers = sorted(numbers)
+difference_of_numbers = sorted_numbers[9] - sorted_numbers[0]
 
-
+print(difference_of_numbers)
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
 
