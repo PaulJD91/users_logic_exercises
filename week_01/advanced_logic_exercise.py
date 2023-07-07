@@ -36,7 +36,11 @@ print(status)
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 
+total_sum = 0
 
+for number in numbers:
+    total_sum = total_sum + number
+    
 # 5. HARD! Print the sum of the numbers. 
 #    Except the number 13 is very unlucky, so it does not count.
 #    And numbers that come immediately after a 13 also do not count.
