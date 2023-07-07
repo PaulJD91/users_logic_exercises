@@ -17,6 +17,19 @@ difference_of_numbers = sorted_numbers[9] - sorted_numbers[0]
 print(difference_of_numbers)
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
+status = False
+index_1 = 0
+index_2 = 1
+
+for number in numbers:
+    if numbers[index_1] == numbers[index_2]:
+        status = True
+    else:
+        index_1 = index_1 + 1
+        index_2 = index_2 + 1
+
+print(status)
+    
 
 # 4. Print the sum of the numbers, 
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
