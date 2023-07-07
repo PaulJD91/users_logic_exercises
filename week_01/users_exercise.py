@@ -68,6 +68,15 @@ eriks_lottery_num_list_sorted = sorted(eriks_lottery_num_list)
 
 print(eriks_lottery_num_list_sorted[0])
 # 6. Return an list of Avril's lottery numbers that are even
+avrils_lot_nums = users["Avril"]["lottery_numbers"]
+
+avrils_lot_nums_even = []
+
+for number in avrils_lot_nums:
+     if number  % 2 == 0:
+          avrils_lot_nums_even.append(number)
+          
+print(avrils_lot_nums_even)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"]["lottery_numbers"].append(7)
 print(users["Erik"]["lottery_numbers"])
