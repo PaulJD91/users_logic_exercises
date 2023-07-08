@@ -36,16 +36,31 @@ print(status)
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 
-total_sum = 0
+def list_count(numbers):
+    sum = 0
+    stop = False
+    for number in numbers:
+        if number == 6:
+            stop = True
+        elif number == 7:
+            stop = False
+        elif stop == False:
+            sum = sum + number
+    return sum
 
-for number in numbers:
-    total_sum = total_sum + number
-    if number == 6:
-        break
-    if number == 7:
-        continue
+print(list_count([0, 5]))
 
-print(total_sum)
+# ATTEMPT ONE
+# for number in numbers:
+#     total_sum = total_sum + number
+#     if number in numbers == 6:
+#         break
+#     if number in numbers == 7:
+#         continue
+
+# print(total_sum)
+
+
 # 5. HARD! Print the sum of the numbers. 
 #    Except the number 13 is very unlucky, so it does not count.
 #    And numbers that come immediately after a 13 also do not count.
