@@ -48,7 +48,7 @@ def list_count(numbers):
             sum = sum + number
     return sum
 
-print(list_count([0, 5]))
+print(list_count(numbers))
 
 # ATTEMPT ONE
 # for number in numbers:
