@@ -24,6 +24,7 @@ index_2 = 1
 for number in numbers:
     if numbers[index_1] == numbers[index_2]:
         status = True
+        break
     else:
         index_1 = index_1 + 1
         index_2 = index_2 + 1
@@ -68,6 +69,19 @@ print(list_count(numbers))
 #
 #    So [5, 13, 2] would have sum of 5. 
 
+previous_number = None
+index = 0
+total = 0
+for number in numbers:
+    if number == 13 or previous_number == 13:
+        previous_number = number
+        pass
+    else:
+        total += number
+
+    previous_number = number
+
+print(total)
 
 
 
