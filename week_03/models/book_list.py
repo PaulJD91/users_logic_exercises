@@ -1,5 +1,4 @@
-from book import Book
-from flask import Flask, Blueprint
+from models.book import Book
 
 
 
